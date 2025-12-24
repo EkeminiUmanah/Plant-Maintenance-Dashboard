@@ -1,17 +1,30 @@
 # Maintenance Analytics Dashboard
 
 ## Overview
-Excel-based maintenance analytics dashboard demonstrating proficiency in data analysis, KPI tracking, and visual reporting for maintenance operations.
+This project presents a CMMS-style maintenance analytics dashboard designed to reflect real-world oil and gas maintenance operations.
+
+The dashboard provides an executive-level view of maintenance performance, combining workload, downtime, cost, and reliability indicators to support maintenance planning, execution monitoring, and asset performance analysis.
+
+## Dashboard Overview
+
+![Maintenance Dashboard](screenshots/dashboard_full.png)
 
 ## Purpose
-Built this project to demonstrate understanding of maintenance management metrics and Excel analytical capabilities relevant to maintenance planning and CMMS data analysis roles.
+This project was built to demonstrate practical understanding of maintenance planning and CMMS data analysis, with a focus on:
+
+- Maintenance workload and execution status
+- Preventive vs reactive maintenance strategy
+- Downtime and cost impact on operations
+- Identification of high-risk equipment
+
+While the data is synthetic, the KPIs, structure, and analysis approach directly mirror real CMMS reporting workflows.
 
 ## Features
 
-### 1. Work Orders by Status (Pie Chart)
-- Visual breakdown of work order distribution
-- Shows: Completed, In Progress, Planned, Cancelled
-- Helps identify backlog and workflow bottlenecks
+### 1. Work Orders by Status
+- Displays distribution of work orders across lifecycle stages
+- Completed, In Progress, Planned, Cancelled
+- Provides immediate visibility into backlog and execution health
 
 ### 2. Maintenance Type Distribution (Bar Chart)
 - Analyzes completed work orders by maintenance type
@@ -37,26 +50,35 @@ Dashboard uses realistic oil & gas maintenance data including:
 - Downtime recording
 
 ## Technical Implementation
-- **Built with:** Microsoft Excel
-- **Key Features:** Pivot Tables, Advanced Formulas, Conditional Formatting, Dynamic Charts
-- **Skills Demonstrated:** Data visualization, KPI tracking, analytical thinking
+- **Platform:** Microsoft Excel (Online)
+- **Data Modeling:** Structured tables separating transactional and aggregated data
+- **Analysis Engine:** Pivot tables and calculated KPIs
+- **Interactivity:** Slicers for execution-state filtering
+- **Data Generation:** Python (pandas, numpy) for realistic CMMS data simulation
+
+This structure mirrors how maintenance data is modeled in enterprise CMMS and BI tools.
+
 
 ## Key Metrics Tracked
-- Total work orders by status
-- Equipment availability and uptime
-- Mean Time Between Failures (MTBF)
-- Mean Time To Repair (MTTR)
-- Preventive vs breakdown maintenance ratios
-- Maintenance costs by equipment/type
-- Work order completion rates
+- Total and completed work orders
+- Maintenance backlog and execution status
+- Total downtime hours
+- Total maintenance cost
+- Average downtime per work order
+- Average cost per work order
+- Preventive vs breakdown maintenance ratio
+- Equipment-level downtime concentration
+- Reliability indicators (MTBF, MTTR, availability)
 
-## Relevance to Maintenance Planning
-This dashboard demonstrates:
-- Understanding of maintenance KPIs and terminology
-- Ability to analyze work order data for insights
-- Excel proficiency for planning and reporting
-- Visual communication of complex operational data
-- Systematic approach to identifying problem areas
+
+## Relevance to Maintenance Planning and CMMS Roles
+This dashboard demonstrates the ability to:
+- Interpret CMMS data in an operational context
+- Evaluate maintenance strategy effectiveness
+- Identify reliability risks and cost drivers
+- Communicate maintenance performance to non-technical stakeholders
+- Build scalable reporting structures suitable for CMMS and BI platforms
+
 
 ## Future Enhancements
 - Integration with real CMMS/SAP PM data
@@ -71,4 +93,5 @@ Computer Scientist | Data Analyst
 Developing expertise in maintenance analytics and planning
 
 ## Note
-This is a learning project using synthetic but realistic data to demonstrate analytical capabilities and domain understanding. Principles and methodologies apply directly to real maintenance operations data.
+This project uses synthetic but realistic data to demonstrate maintenance analytics concepts. The KPIs, workflows, and reporting logic are directly applicable to real CMMS environments such as SAP PM, IBM Maximo, or Power BI–based reporting layers.
+
