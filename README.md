@@ -9,6 +9,10 @@ The dashboard provides an executive-level view of maintenance performance, combi
 
 ![Maintenance Dashboard](screenshots/dashboard_full.png)
 
+### Key KPIs at a Glance
+![KPI Strip](screenshots/kpi_strip.png)
+
+
 ## Purpose
 This project was built to demonstrate practical understanding of maintenance planning and CMMS data analysis, with a focus on:
 
@@ -45,7 +49,7 @@ While the data is synthetic, the KPIs, structure, and analysis approach directly
 Dashboard uses realistic oil & gas maintenance data including:
 - 30 equipment items (pumps, compressors, heat exchangers, etc.)
 - 500+ work orders spanning 12 months
-- Equipment metrics (MTBF, MTTR, availability)
+- Equipment-level reliability metrics (MTBF, MTTR, availability) calculated in the data model
 - Cost tracking (labor + materials)
 - Downtime recording
 
@@ -56,7 +60,6 @@ Dashboard uses realistic oil & gas maintenance data including:
 - **Interactivity:** Slicers for execution-state filtering
 - **Data Generation:** Python (pandas, numpy) for realistic CMMS data simulation
 - The dataset was generated using a reproducible Python script (`generate_maintenance_data.py`) to simulate realistic oil and gas maintenance activity.
-
 
 This structure mirrors how maintenance data is modeled in enterprise CMMS and BI tools.
 
@@ -70,7 +73,8 @@ This structure mirrors how maintenance data is modeled in enterprise CMMS and BI
 - Average cost per work order
 - Preventive vs breakdown maintenance ratio
 - Equipment-level downtime concentration
-- Reliability indicators (MTBF, MTTR, availability)
+- Equipment-level reliability metrics (MTBF, MTTR, availability) calculated in the data model
+
 
 
 ## Design Decisions
