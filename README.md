@@ -55,6 +55,8 @@ Dashboard uses realistic oil & gas maintenance data including:
 - **Analysis Engine:** Pivot tables and calculated KPIs
 - **Interactivity:** Slicers for execution-state filtering
 - **Data Generation:** Python (pandas, numpy) for realistic CMMS data simulation
+- The dataset was generated using a reproducible Python script (`generate_maintenance_data.py`) to simulate realistic oil and gas maintenance activity.
+
 
 This structure mirrors how maintenance data is modeled in enterprise CMMS and BI tools.
 
@@ -69,6 +71,13 @@ This structure mirrors how maintenance data is modeled in enterprise CMMS and BI
 - Preventive vs breakdown maintenance ratio
 - Equipment-level downtime concentration
 - Reliability indicators (MTBF, MTTR, availability)
+
+
+## Design Decisions
+- KPIs were intentionally limited to avoid overloading the dashboard
+- Reliability metrics (MTBF, MTTR, availability) are calculated but kept out of the executive view
+- Explicit sort keys were used to ensure charts reflect maintenance strategy rather than fluctuating volumes
+- Equipment-level metrics were separated from transactional work orders to prevent double counting
 
 
 ## Relevance to Maintenance Planning and CMMS Roles
